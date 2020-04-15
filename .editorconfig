@@ -1,0 +1,29 @@
+# Terraform editor configuration normalization
+# @see http://editorconfig.org/
+
+# This is the top-most .editorconfig file; do not search in parent directories.
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+# Terraform
+[*.{tf,tfvars}]
+indent_size = 4
+indent_style = space
+
+# Markdown
+[*.md]
+indent_size = 2
+
+# Makefile
+[Makefile]
+tab_width = 2
+indent_style = tab

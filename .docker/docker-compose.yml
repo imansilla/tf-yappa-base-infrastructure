@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  terraform:
+    image: hashicorp/terraform:light
+    volumes:
+      - ../.terraform:/app/terraform
+      - $HOME/.ssh/id_rsa_git_nubity:/root/.ssh/id_rsa
+      - $HOME/.terraformrc:/root/.terraformrc
+    working_dir: /app/terraform/environments/${ENVIRONMENT}
+    env_file:
+      - ./.env
