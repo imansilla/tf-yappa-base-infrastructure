@@ -1,4 +1,4 @@
-# tf-brain-base-infrastructure
+# tf-yappa-base-infrastructure
 
 This project uses Terraform Cloud to storage the terraform.tfstate file.
 To upload modifications run:
